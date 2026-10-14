@@ -3,79 +3,83 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Earn by Writing From Home</title>
+<title>Freelancer Writing Work Jobs</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 * {
+  box-sizing: border-box;
+}
+
+html, body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  width: 100%;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   background:
-    radial-gradient(circle at 5% 5%, #e4e5ff 0, transparent 30%),
-    radial-gradient(circle at 100% 100%, #eee0ff 0, transparent 25%),
-    #f7f8ff;
-  color: #151a2b;
+    radial-gradient(circle at 5% 5%, #e9eaff 0, transparent 35%),
+    radial-gradient(circle at 95% 95%, #f0e5ff 0, transparent 32%),
+    #f7f7ff;
+  color: #192033;
 }
 
-.hero {
+.landing {
+  width: 100%;
   min-height: 100vh;
-  min-height: 100svh;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 25px 15px;
-  text-align: center;
+  align-items: center;
+  padding: 35px 16px;
 }
 
 .content {
   width: 100%;
-  max-width: 540px;
+  max-width: 650px;
+  text-align: center;
 }
 
 .badge {
   display: inline-block;
-  background: #fff;
-  color: #6256bb;
-  padding: 7px 15px;
+  background: #ffffff;
+  padding: 9px 16px;
   border-radius: 30px;
-  font-size: 10px;
-  font-weight: 600;
-  box-shadow: 0 5px 20px #2222220c;
-  margin-bottom: 18px;
+  font-size: 12px;
+  color: #555a6b;
+  box-shadow: 0 4px 18px rgba(35, 45, 80, 0.04);
+  margin-bottom: 20px;
 }
 
 h1 {
-  font-size: clamp(30px, 7vw, 38px);
-  line-height: 1.18;
+  font-size: clamp(27px, 5vw, 43px);
+  line-height: 1.2;
   font-weight: 800;
+  margin: 0 0 18px;
   letter-spacing: -1px;
-  margin-bottom: 13px;
 }
 
-h1 span {
+.gradient-text {
   display: block;
-  background: linear-gradient(90deg, #3979ed, #7851e8);
+  background: linear-gradient(90deg, #3479ed, #7950dc);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .subtitle {
-  font-size: 13px;
-  color: #646777;
-  margin-bottom: 4px;
+  font-size: 15px;
+  color: #74778a;
+  margin: 15px 0;
 }
 
 .details {
-  font-size: 12px;
-  line-height: 1.9;
-  color: #5d6170;
-  margin-bottom: 20px;
+  color: #555a6b;
+  font-size: 13px;
+  line-height: 2;
+  margin: 15px 0 22px;
 }
 
 .buttons {
@@ -83,95 +87,107 @@ h1 span {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
-  margin: 22px 0;
+  gap: 14px;
+  margin: 24px 0;
 }
 
 .telegram-btn {
-  display: inline-block;
-  text-decoration: none;
-  background: linear-gradient(110deg, #2673ee, #5043e9);
-  color: white;
-  padding: 14px 22px;
-  border-radius: 35px;
-  font-size: 11px;
-  font-weight: 700;
-  box-shadow: 0 8px 20px #3867eb40;
-  transition: transform .2s;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 390px;
+  min-height: 66px;
+  padding: 18px 25px;
+  background: linear-gradient(100deg, #3478ed, #5540e9);
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-size: 18px;
+  font-weight: 800;
+  border-radius: 45px;
+  box-shadow: 0 8px 22px rgba(66, 87, 230, 0.25);
+  transition: transform 0.2s ease;
 }
 
 .telegram-btn:hover {
-  transform: translateY(-2px);
+  transform: scale(1.03);
 }
 
-.limited {
+.seats {
   display: inline-block;
-  text-decoration: none;
-  color: #c84d67;
-  background: white;
-  border: 1px solid #f2dfe5;
+  background: #fff;
+  color: #b64f5b;
+  border: 1px solid #f1e5e8;
   padding: 13px 19px;
-  border-radius: 35px;
-  font-size: 11px;
-  font-weight: 600;
+  border-radius: 30px;
+  font-size: 13px;
 }
 
 .features {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 9px;
-  margin-top: 23px;
+  gap: 10px;
+  margin: 25px 0 35px;
 }
 
 .feature {
-  background: white;
-  color: #50515b;
-  padding: 10px 13px;
+  background: #ffffff;
   border-radius: 30px;
-  font-size: 10px;
-  font-weight: 600;
-  box-shadow: 0 5px 18px #2222220c;
-}
-
-/* Second Telegram button */
-.bottom-join {
-  margin-top: 35px;
-  padding: 20px 12px;
-  border-radius: 20px;
-  background: #ffffffc9;
-}
-
-.bottom-join h2 {
-  font-size: 19px;
-  margin-bottom: 8px;
-}
-
-.bottom-join p {
-  color: #646777;
+  padding: 11px 15px;
+  color: #555b68;
   font-size: 12px;
-  margin-bottom: 15px;
+  box-shadow: 0 3px 12px rgba(30, 40, 70, 0.04);
 }
 
-@media (max-width: 380px) {
+.bottom-card {
+  width: 100%;
+  padding: 28px 18px;
+  background: rgba(255,255,255,0.88);
+  border-radius: 22px;
+  box-shadow: 0 8px 35px rgba(35, 45, 80, 0.03);
+}
+
+.bottom-card h2 {
+  margin: 0 0 10px;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.bottom-card p {
+  margin: 0 0 23px;
+  color: #77798a;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .landing {
+    padding: 30px 15px;
+  }
+
   h1 {
     font-size: 29px;
   }
 
   .telegram-btn {
-    padding: 13px 17px;
+    max-width: 100%;
+    min-height: 64px;
+    font-size: 17px;
   }
 
-  .limited {
-    padding: 12px 15px;
+  .seats {
+    padding: 12px 14px;
+  }
+
+  .bottom-card {
+    padding: 25px 14px;
   }
 }
 </style>
 </head>
 
 <body>
-
-<section class="hero">
+<section class="landing">
   <div class="content">
 
     <div class="badge">
@@ -180,31 +196,28 @@ h1 span {
 
     <h1>
       Earn by Writing
-      <span>FREELANCER WRITING WORK JOBS...</span>
+      <span class="gradient-text">
+        FREELANCER WRITING WORK JOBS...
+      </span>
     </h1>
 
-    <p class="subtitle">
-      Trusted Work Opportunity
-    </p>
+    <p class="subtitle">Trusted Work Opportunity</p>
 
     <div class="details">
-      🏠 Work From Home | 👨‍🎓 Students | 👩 Housewife<br>
-      ⏳ Limited Seats Available | 📲 Apply Fast 👇
+      🏠 Work From Home | 👨‍🎓 Students | 👩‍💼 Housewife<br>
+      📜 Limited Seats Available | 📱 Apply Fast
     </div>
 
-    <!-- TELEGRAM BUTTON 1 -->
+    <!-- FIRST LARGE TELEGRAM BUTTON -->
     <div class="buttons">
       <a class="telegram-btn"
-         href="https://t.me/+21aa4hGUuWI1ZGU9"
-         target="_blank" rel="noopener">
-        JOIN TELEGRAM CHANNEL
+         href="https://t.me/YOUR_CHANNEL"
+         target="_blank"
+         rel="noopener noreferrer">
+        ✈️ JOIN TELEGRAM CHANNEL
       </a>
 
-      <a class="limited"
-         href="https://t.me/YOUR_CHANNEL"
-         target="_blank" rel="noopener">
-        🚨 Limited Seats Left
-      </a>
+      <span class="seats">🔔 Limited Seats Left</span>
     </div>
 
     <div class="features">
@@ -213,20 +226,20 @@ h1 span {
       <div class="feature">✅ Flexible Hours</div>
     </div>
 
-    <!-- TELEGRAM BUTTON 2 -->
-    <div class="bottom-join">
+    <div class="bottom-card">
       <h2>Ready to Get Started?</h2>
       <p>Join our Telegram channel for more information.</p>
 
+      <!-- SECOND LARGE TELEGRAM BUTTON -->
       <a class="telegram-btn"
-         href="https://t.me/+21aa4hGUuWI1ZGU9"
-         target="_blank" rel="noopener">
-        📲 JOIN TELEGRAM CHANNEL
+         href="https://t.me/YOUR_CHANNEL"
+         target="_blank"
+         rel="noopener noreferrer">
+        ✈️ JOIN TELEGRAM CHANNEL
       </a>
     </div>
 
   </div>
 </section>
-
 </body>
 </html>
